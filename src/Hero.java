@@ -2,13 +2,12 @@ import java.util.*;
 
 
 public abstract class Hero {
-    public int lifePoints;
+    public int vie;
     public int armor;
-    public int weaponDamage;
-    public List<Potion> potions;
+    public List<Potion> Potion;
     public List<Food> lembas;
 
-    public int attack(){
+    public int attaque(){
 
     }
 

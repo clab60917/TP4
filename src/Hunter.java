@@ -5,7 +5,7 @@ public class Hunter extends Hero {
 
     public Hunter(){
         vie = 100;
-        xp = 0
+        xp = 0;
     }
 
     public Hunter(int v, int x){
@@ -21,12 +21,24 @@ public class Hunter extends Hero {
     public void setVie(int v){
         vie = v;
     }
-    public void setXp(int v);
-    xp = v;
+    public void setXp(int v){
+        xp = v;
+    }
+
+//service
+    public int attaquer(){
+        return 5;
+    }
+
+    //on revoie un objet et la description
 
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Hunter{" +
+                "arrows=" + arrows +
+                ", vie=" + vie +
+                ", xp=" + xp +
+                '}';
+    }
 }
